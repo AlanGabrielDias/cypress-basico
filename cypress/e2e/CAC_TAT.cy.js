@@ -64,7 +64,7 @@ describe('Central de Atendimento CAC-TAT', () => {
     });
   })
 
-  it.only('Testa se o input file aceita arquivos', () => {
+  it('Testa se o input file aceita arquivos', () => {
     cy.get('#file-upload').should('not.have.value').selectFile('cypress/fixtures/example.json', {
       action: "drag-drop"
     })
